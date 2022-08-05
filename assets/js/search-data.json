@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "This Is My First Blog",
+            "title": "An Example Markdown Post",
             "content": "This is my first blog . I was waiting for my friends to finish their work. While waiting, I found a nice Open Source Project: Fastpages. . It doesn’t seem difficult to me. I spend ~20 reading the docs and gave it a try. . It works! . 2022 Aug 4 Ian .",
-            "url": "https://ian729.github.io/silver-umbrella/2022/08/04/This-Is-My-First-Blog.html",
-            "relUrl": "/2022/08/04/This-Is-My-First-Blog.html",
+            "url": "https://ian729.github.io/silver-umbrella/markdown/2022/08/04/This-Is-My-First-Blog.html",
+            "relUrl": "/markdown/2022/08/04/This-Is-My-First-Blog.html",
             "date": " • Aug 4, 2022"
         }
         
