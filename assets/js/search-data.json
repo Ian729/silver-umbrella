@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Figlet",
-            "content": "Introduction . pyfiglet is the Python implementation of the FIGlet font rendering system. . Installation . pip3 install pyfiglet . Usage . &gt;&gt;&gt; import pyfiglet &gt;&gt;&gt; figlet_obj = pyfiglet.figlet(&quot;Hello World&quot;) &gt;&gt;&gt; figlet_obj = pyfiglet.figlet_format(&quot;Hello World&quot;) &gt;&gt;&gt; print(figlet_obj) _ _ _ _ __ __ _ _ | | | | ___| | | ___ / /__ _ __| | __| | | |_| |/ _ | |/ _ / / / _ | &#39;__| |/ _` | | _ | __/ | | (_) | V V / (_) | | | | (_| | |_| |_| ___|_|_| ___/ _/ _/ ___/|_| |_| __,_| . Reference . geeksforgeeks | 2022 Aug 4 Ian .",
+            "content": "Introduction . pyfiglet is the Python implementation of the FIGlet font rendering system. . Installation . pip3 install pyfiglet . Usage . &gt;&gt;&gt; import pyfiglet &gt;&gt;&gt; figlet_obj = pyfiglet.figlet(&quot;Hello World&quot;) &gt;&gt;&gt; figlet_obj = pyfiglet.figlet_format(&quot;Hello World&quot;) &gt;&gt;&gt; print(figlet_obj) _ _ _ _ __ __ _ _ | | | | ___| | | ___ / /__ _ __| | __| | | |_| |/ _ | |/ _ / / / _ | &#39;__| |/ _` | | _ | __/ | | (_) | V V / (_) | | | | (_| | |_| |_| ___|_|_| ___/ _/ _/ ___/|_| |_| __,_| . Reference . geeksforgeeks |",
             "url": "https://ian729.github.io/silver-umbrella/markdown/2022/08/13/Figlet.html",
             "relUrl": "/markdown/2022/08/13/Figlet.html",
             "date": " • Aug 13, 2022"
