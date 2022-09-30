@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://ian729.github.io/silver-umbrella/markdown/2020/01/14/test-markdown-post.html</loc>
+<loc>https://ian729.github.io/silver-umbrella/markdown/tech/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -9,15 +9,19 @@
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://ian729.github.io/silver-umbrella/markdown/2022/08/13/Figlet.html</loc>
+<loc>https://ian729.github.io/silver-umbrella/markdown/tech/2022/08/13/Figlet.html</loc>
 <lastmod>2022-08-13T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://ian729.github.io/silver-umbrella/markdown/2022/09/02/Python.html</loc>
+<loc>https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/02/Python.html</loc>
 <lastmod>2022-09-02T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://ian729.github.io/silver-umbrella/markdown/2022/09/30/ObjectDetection.html</loc>
+<loc>https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html</loc>
+<lastmod>2022-09-30T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/ObjectDetection.html</loc>
 <lastmod>2022-09-30T00:00:00-05:00</lastmod>
 </url>
 <url>

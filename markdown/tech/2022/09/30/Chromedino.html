@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Object Detection using YOLOv5 | Silver Umbrella</title>
+<title>Hacking Chrome Dinosaur Game | Silver Umbrella</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Object Detection using YOLOv5" />
+<meta property="og:title" content="Hacking Chrome Dinosaur Game" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some quick notes on Object Detection" />
-<meta property="og:description" content="Some quick notes on Object Detection" />
-<link rel="canonical" href="https://ian729.github.io/silver-umbrella/markdown/2022/09/30/ObjectDetection.html" />
-<meta property="og:url" content="https://ian729.github.io/silver-umbrella/markdown/2022/09/30/ObjectDetection.html" />
+<meta name="description" content="Some quick notes on Chrome Dinosaur" />
+<meta property="og:description" content="Some quick notes on Chrome Dinosaur" />
+<link rel="canonical" href="https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html" />
+<meta property="og:url" content="https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html" />
 <meta property="og:site_name" content="Silver Umbrella" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-30T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Object Detection using YOLOv5" />
+<meta property="twitter:title" content="Hacking Chrome Dinosaur Game" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-30T00:00:00-05:00","datePublished":"2022-09-30T00:00:00-05:00","description":"Some quick notes on Object Detection","headline":"Object Detection using YOLOv5","mainEntityOfPage":{"@type":"WebPage","@id":"https://ian729.github.io/silver-umbrella/markdown/2022/09/30/ObjectDetection.html"},"url":"https://ian729.github.io/silver-umbrella/markdown/2022/09/30/ObjectDetection.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-30T00:00:00-05:00","datePublished":"2022-09-30T00:00:00-05:00","description":"Some quick notes on Chrome Dinosaur","headline":"Hacking Chrome Dinosaur Game","mainEntityOfPage":{"@type":"WebPage","@id":"https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html"},"url":"https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/silver-umbrella/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ian729.github.io/silver-umbrella/feed.xml" title="Silver Umbrella" /><link rel="shortcut icon" type="image/x-icon" href="/silver-umbrella/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Object Detection using YOLOv5</h1><p class="page-description">Some quick notes on Object Detection</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-30T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Hacking Chrome Dinosaur Game</h1><p class="page-description">Some quick notes on Chrome Dinosaur</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-30T00:00:00-05:00" itemprop="datePublished">
         Sep 30, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -87,6 +87,9 @@ window.onload = wrap_img;
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
         <a class="category-tags-link" href="/silver-umbrella/categories/#markdown">markdown</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/silver-umbrella/categories/#tech">tech</a>
         
       
       </p>
@@ -97,58 +100,8 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#introduction">Introduction</a></li>
-<li class="toc-entry toc-h1"><a href="#installation">Installation</a></li>
-<li class="toc-entry toc-h1"><a href="#usage">Usage</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#inference-with-detectpy">Inference with detect.py</a></li>
-<li class="toc-entry toc-h2"><a href="#inference">Inference</a></li>
-</ul>
-</li>
 </ul><h1 id="introduction">
 <a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
-<p>Repository: <a href="https://github.com/Ian729/yolov5">https://github.com/Ian729/yolov5</a><br>
-Dataset: <a href="https://cocodataset.org/#home">https://cocodataset.org/#home</a><br>
-Dataset Categories: <a href="https://gist.github.com/SrikarNamburu/0945de8f9a8714ec245dde3443e9d487">https://gist.github.com/SrikarNamburu/0945de8f9a8714ec245dde3443e9d487</a></p>
-
-<h1 id="installation">
-<a class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/Ian729/yolov5  <span class="c"># clone</span>
-<span class="nb">cd </span>yolov5
-pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt  <span class="c"># install</span>
-</code></pre></div></div>
-
-<h1 id="usage">
-<a class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
-<h2 id="inference-with-detectpy">
-<a class="anchor" href="#inference-with-detectpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inference with detect.py</h2>
-<p>detect.py runs inference on a variety of sources, downloading models automatically from the latest YOLOv5 release and saving results to runs/detect.</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">detect</span><span class="p">.</span><span class="n">py</span> <span class="o">--</span><span class="n">source</span> <span class="mi">0</span>  <span class="c1"># webcam
-</span>                          <span class="n">img</span><span class="p">.</span><span class="n">jpg</span>  <span class="c1"># image
-</span>                          <span class="n">vid</span><span class="p">.</span><span class="n">mp4</span>  <span class="c1"># video
-</span>                          <span class="n">screen</span>  <span class="c1"># screenshot
-</span>                          <span class="n">path</span><span class="o">/</span>  <span class="c1"># directory
-</span>                          <span class="s">'path/*.jpg'</span>  <span class="c1"># glob
-</span>                          <span class="s">'https://youtu.be/Zgi9g1ksQHc'</span>  <span class="c1"># YouTube
-</span>                          <span class="s">'rtsp://example.com/media.mp4'</span>  <span class="c1"># RTSP, RTMP, HTTP stream
-</span></code></pre></div></div>
-
-<h2 id="inference">
-<a class="anchor" href="#inference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inference</h2>
-<p>YOLOv5 PyTorch Hub inference. Models download automatically from the latest YOLOv5 release.</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">torch</span>
-
-<span class="c1"># Model
-</span><span class="n">model</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">hub</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">'ultralytics/yolov5'</span><span class="p">,</span> <span class="s">'yolov5s'</span><span class="p">)</span>  <span class="c1"># or yolov5n - yolov5x6, custom
-</span>
-<span class="c1"># Images
-</span><span class="n">img</span> <span class="o">=</span> <span class="s">'https://ultralytics.com/images/zidane.jpg'</span>  <span class="c1"># or file, Path, PIL, OpenCV, numpy, list
-</span>
-<span class="c1"># Inference
-</span><span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-
-<span class="c1"># Results
-</span><span class="n">results</span><span class="p">.</span><span class="k">print</span><span class="p">()</span>  <span class="c1"># or .show(), .save(), .crop(), .pandas(), etc.
-</span></code></pre></div></div>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -158,7 +111,7 @@ pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt 
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/silver-umbrella/markdown/2022/09/30/ObjectDetection.html" hidden></a>
+</script><a class="u-url" href="/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html" hidden></a>
 </article>
 
       </div>
