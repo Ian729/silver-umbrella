@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Daily Git Commands | Silver Umbrella</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Daily Git Commands" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Some quick notes on daily frequently used git commands" />
+<meta property="og:description" content="Some quick notes on daily frequently used git commands" />
+<link rel="canonical" href="https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/GitIntroduction.html" />
+<meta property="og:url" content="https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/GitIntroduction.html" />
+<meta property="og:site_name" content="Silver Umbrella" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Daily Git Commands" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-05T00:00:00-05:00","datePublished":"2022-10-05T00:00:00-05:00","description":"Some quick notes on daily frequently used git commands","headline":"Daily Git Commands","mainEntityOfPage":{"@type":"WebPage","@id":"https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/GitIntroduction.html"},"url":"https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/GitIntroduction.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/silver-umbrella/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ian729.github.io/silver-umbrella/feed.xml" title="Silver Umbrella" /><link rel="shortcut icon" type="image/x-icon" href="/silver-umbrella/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/silver-umbrella/">Silver Umbrella</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/silver-umbrella/about/">About Me</a><a class="page-link" href="/silver-umbrella/search/">Search</a><a class="page-link" href="/silver-umbrella/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Daily Git Commands</h1><p class="page-description">Some quick notes on daily frequently used git commands</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-05T00:00:00-05:00" itemprop="datePublished">
+        Oct 5, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/silver-umbrella/categories/#markdown">markdown</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/silver-umbrella/categories/#tech">tech</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#introduction">Introduction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#git-workflow">Git Workflow</a></li>
+<li class="toc-entry toc-h2"><a href="#git-stages">Git Stages</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#usage">Usage</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#create-a-new-repository">Create a new repository</a></li>
+<li class="toc-entry toc-h2"><a href="#clone-an-existing-repository">Clone an existing repository</a></li>
+<li class="toc-entry toc-h2"><a href="#add-files-to-the-staging-area">Add files to the staging area</a></li>
+<li class="toc-entry toc-h2"><a href="#commit-changes">Commit changes</a></li>
+<li class="toc-entry toc-h2"><a href="#push-changes-to-remote-repository">Push changes to remote repository</a></li>
+<li class="toc-entry toc-h2"><a href="#mixed-resetdefault">Mixed reset(default)</a></li>
+<li class="toc-entry toc-h2"><a href="#hard-reset">Hard reset</a></li>
+<li class="toc-entry toc-h2"><a href="#soft-reset">Soft reset</a></li>
+<li class="toc-entry toc-h2"><a href="#difference-between-three-reset-types">Difference between three reset types</a></li>
+<li class="toc-entry toc-h2"><a href="#revert-changes">Revert changes</a></li>
+<li class="toc-entry toc-h2"><a href="#squash-commits">Squash commits</a></li>
+<li class="toc-entry toc-h2"><a href="#pull-changes-from-remote-repository">Pull changes from remote repository</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#references">References</a></li>
+</ul><h1 id="introduction">
+<a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+<p><code class="language-plaintext highlighter-rouge">git</code> is a version control system that is widely used in software development. It is a distributed version control system that allows developers to work on the same project at the same time. It is also a powerful tool that can be used to track changes in files and revert to previous versions.</p>
+<h2 id="git-workflow">
+<a class="anchor" href="#git-workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git Workflow</h2>
+<p><img src="https://git-scm.com/book/en/v2/images/areas.png" alt="Git Workflow"></p>
+<h2 id="git-stages">
+<a class="anchor" href="#git-stages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git Stages</h2>
+<p><img src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt="Git Stages">
+Staging area is a concept that is often used in <code class="language-plaintext highlighter-rouge">git</code>. It is a temporary area where files are stored before they are committed to the repository.</p>
+
+<h1 id="usage">
+<a class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+<h2 id="create-a-new-repository">
+<a class="anchor" href="#create-a-new-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a new repository</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># create a new directory</span>
+<span class="nv">$ </span><span class="nb">mkdir </span>myproject
+<span class="c"># change directory</span>
+<span class="nv">$ </span><span class="nb">cd </span>myproject
+<span class="c"># initialize the directory as a git repository</span>
+<span class="nv">$ </span>git init
+</code></pre></div></div>
+<h2 id="clone-an-existing-repository">
+<a class="anchor" href="#clone-an-existing-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clone an existing repository</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># clone the repository</span>
+<span class="nv">$ </span>git clone https://github.com/ian729/silver-umbrella.git
+</code></pre></div></div>
+
+<h2 id="add-files-to-the-staging-area">
+<a class="anchor" href="#add-files-to-the-staging-area" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add files to the staging area</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># add all files in the current directory to the staging area</span>
+<span class="nv">$ </span>git add <span class="nt">-A</span>
+<span class="c"># add a specific file to the staging area</span>
+<span class="nv">$ </span>git add README.md
+</code></pre></div></div>
+
+<h2 id="commit-changes">
+<a class="anchor" href="#commit-changes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commit changes</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># commit all changes in the staging area</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"commit message"</span>
+</code></pre></div></div>
+
+<h2 id="push-changes-to-remote-repository">
+<a class="anchor" href="#push-changes-to-remote-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Push changes to remote repository</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># push changes to remote repository</span>
+<span class="nv">$ </span>git push
+</code></pre></div></div>
+
+<h2 id="mixed-resetdefault">
+<a class="anchor" href="#mixed-resetdefault" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixed reset(default)</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># reset all changes in the staging area</span>
+<span class="nv">$ </span>git reset
+<span class="nv">$ </span>git reset <span class="nt">--mixed</span>
+<span class="c"># reset a specific file in the staging area</span>
+<span class="nv">$ </span>git reset README.md
+</code></pre></div></div>
+
+<h2 id="hard-reset">
+<a class="anchor" href="#hard-reset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hard reset</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># hard reset all changes in the staging area</span>
+<span class="nv">$ </span>git reset <span class="nt">--hard</span>
+<span class="c"># hard reset a specific file in the staging area</span>
+<span class="nv">$ </span>git reset <span class="nt">--hard</span> README.md
+</code></pre></div></div>
+
+<h2 id="soft-reset">
+<a class="anchor" href="#soft-reset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Soft reset</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># soft reset all changes in the staging area</span>
+<span class="nv">$ </span>git reset <span class="nt">--soft</span>
+<span class="c"># soft reset a specific file in the staging area</span>
+<span class="nv">$ </span>git reset <span class="nt">--soft</span> README.md
+</code></pre></div></div>
+
+<h2 id="difference-between-three-reset-types">
+<a class="anchor" href="#difference-between-three-reset-types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Difference between three reset types</h2>
+<p>| Type | Description |
+| — | — |
+| mixed | reset the staging area, but keep the working directory |
+| soft | reset the staging area and the working directory |
+| hard | reset the staging area, the working directory and the local repository |</p>
+
+<p><img src="https://www.howtogeek.com/wp-content/uploads/csit/2021/07/f5026f58.png?width=1200&amp;trim=1,1&amp;bg-color=000&amp;pad=1,1" alt="Git Reset"></p>
+
+<h2 id="revert-changes">
+<a class="anchor" href="#revert-changes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Revert changes</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># revert all changes in the staging area</span>
+<span class="nv">$ </span>git checkout <span class="nt">--</span> <span class="nb">.</span>
+<span class="c"># revert a specific file in the staging area</span>
+<span class="nv">$ </span>git checkout <span class="nt">--</span> README.md
+</code></pre></div></div>
+
+<h2 id="squash-commits">
+<a class="anchor" href="#squash-commits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Squash commits</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># squash the last 3 commits into one</span>
+<span class="nv">$ </span>git rebase <span class="nt">-i</span> HEAD~3
+</code></pre></div></div>
+
+<h2 id="pull-changes-from-remote-repository">
+<a class="anchor" href="#pull-changes-from-remote-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pull changes from remote repository</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># pull changes from remote repository</span>
+<span class="nv">$ </span>git pull
+<span class="c"># pull changes while rebasing local commits</span>
+<span class="nv">$ </span>git pull <span class="nt">--rebase</span>
+</code></pre></div></div>
+<p><img src="https://miro.medium.com/max/720/1*pzT4KMiZDOFsMOKH-cJjfQ.png" alt="Rebase"></p>
+
+<h1 id="references">
+<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h1>
+<ol>
+  <li><a href="https://git-scm.com/doc">Git Documentation</a></li>
+  <li><a href="https://www.runoob.com/git/git-tutorial.html">Git Tutorial</a></li>
+  <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a></li>
+  <li><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">Git Cheat Sheet</a></li>
+  <li><a href="https://www.git-tower.com/blog/git-cheat-sheet/">Git Cheat Sheet</a></li>
+</ol>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Ian729/silver-umbrella"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/silver-umbrella/markdown/tech/2022/10/05/GitIntroduction.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/silver-umbrella/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/silver-umbrella/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/silver-umbrella/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A personal blog about tech and life</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/ian729" target="_blank" title="ian729"><svg class="svg-icon grey"><use xlink:href="/silver-umbrella/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/ian_729" target="_blank" title="ian_729"><svg class="svg-icon grey"><use xlink:href="/silver-umbrella/assets/minima-social-icons.svg#instagram"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
