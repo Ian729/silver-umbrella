@@ -4,9 +4,9 @@
         "post0": {
             "title": "Enable shortcut to jump one word back back and forward in iTerm2",
             "content": "iTerm2 is commonly used as a terminal emulator on macOS. It is a great tool for developers. However, it does not have a shortcut to jump one word back and forward. This is a quick note on how to enable this feature. . Killing a fly with a cannon: . Go to Preferences… &gt; Profiles &gt; Keys (not Preferences… &gt; Keys) | On current versions (3.14+) you then switch to the Key Mappings tab | Press Presets… dropdown button. | Select Natural Text Editing | Then, you can . move a word backwards Option ⌥ + ← | move a word forwards Option ⌥ + → | move to the start of the line fn + ← | move to the end of the line fn + → | delete a word backwards Option ⌥ + ⌫ | delete the whole line Command ⌘ + ⌫ | . Reference . https://apple.stackexchange.com/a/293988 |",
-            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/iTermJumpBack.html",
-            "relUrl": "/markdown/tech/2022/10/05/iTermJumpBack.html",
-            "date": " • Oct 5, 2022"
+            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/08/iTermJumpBack.html",
+            "relUrl": "/markdown/tech/2022/10/08/iTermJumpBack.html",
+            "date": " • Oct 8, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Pyautogui",
             "content": "Introduction . What is Pyautogui? . Pyautogui is a Python module for controlling the mouse and keyboard. It can be used to automate mouse clicks, keyboard presses, and other interactions with the computer. It can also be used to take screenshots, locate images on the screen, and perform other image recognition tasks. . Usage . Installation . pip3 install pyautogui . Example . import pyautogui # move the mouse to the x, y coordinates 100, 100 pyautogui.moveTo(100, 100, duration=0.25) # click the mouse pyautogui.click() # type some text pyautogui.typewrite(&#39;Hello world!&#39;, interval=0.25) # press the esc key pyautogui.press(&#39;esc&#39;) # press the enter key pyautogui.press(&#39;enter&#39;) . &gt;&gt;&gt; distance = 200 &gt;&gt;&gt; while distance &gt; 0: pyautogui.drag(distance, 0, duration=0.5) # move right distance -= 5 pyautogui.drag(0, distance, duration=0.5) # move down pyautogui.drag(-distance, 0, duration=0.5) # move left distance -= 5 pyautogui.drag(0, -distance, duration=0.5) # move up . . Reference . Geeksforgeeks | Pyautogui | Medium |",
-            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/library/2022/10/05/Pyautogui.html",
-            "relUrl": "/markdown/tech/library/2022/10/05/Pyautogui.html",
-            "date": " • Oct 5, 2022"
+            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/library/2022/10/08/Pyautogui.html",
+            "relUrl": "/markdown/tech/library/2022/10/08/Pyautogui.html",
+            "date": " • Oct 8, 2022"
         }
         
     
