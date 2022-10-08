@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Enable shortcut to jump one word back back and forward in iTerm2",
+            "title": "Enable shortcut to jump one word back and forward in iTerm2",
             "content": "iTerm2 is commonly used as a terminal emulator on macOS. It is a great tool for developers. However, it does not have a shortcut to jump one word back and forward. This is a quick note on how to enable this feature. . Killing a fly with a cannon: . Go to Preferences… &gt; Profiles &gt; Keys (not Preferences… &gt; Keys) | On current versions (3.14+) you then switch to the Key Mappings tab | Press Presets… dropdown button. | Select Natural Text Editing | Then, you can . move a word backwards Option ⌥ + ← | move a word forwards Option ⌥ + → | move to the start of the line fn + ← | move to the end of the line fn + → | delete a word backwards Option ⌥ + ⌫ | delete the whole line Command ⌘ + ⌫ | . Reference . https://apple.stackexchange.com/a/293988 |",
             "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/08/iTermJumpBack.html",
             "relUrl": "/markdown/tech/2022/10/08/iTermJumpBack.html",
