@@ -4,8 +4,8 @@
         "post0": {
             "title": "Pyautogui",
             "content": "Introduction . What is Pyautogui? . Pyautogui is a Python module for controlling the mouse and keyboard. It can be used to automate mouse clicks, keyboard presses, and other interactions with the computer. It can also be used to take screenshots, locate images on the screen, and perform other image recognition tasks. . Usage . Installation . pip3 install pyautogui . Example . import pyautogui # move the mouse to the x, y coordinates 100, 100 pyautogui.moveTo(100, 100, duration=0.25) # click the mouse pyautogui.click() # type some text pyautogui.typewrite(&#39;Hello world!&#39;, interval=0.25) # press the esc key pyautogui.press(&#39;esc&#39;) # press the enter key pyautogui.press(&#39;enter&#39;) . &gt;&gt;&gt; distance = 200 &gt;&gt;&gt; while distance &gt; 0: pyautogui.drag(distance, 0, duration=0.5) # move right distance -= 5 pyautogui.drag(0, distance, duration=0.5) # move down pyautogui.drag(-distance, 0, duration=0.5) # move left distance -= 5 pyautogui.drag(0, -distance, duration=0.5) # move up . . Reference . Geeksforgeeks | Pyautogui | Medium |",
-            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/10/05/Pyautogui.html",
-            "relUrl": "/markdown/tech/2022/10/05/Pyautogui.html",
+            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/library/2022/10/05/Pyautogui.html",
+            "relUrl": "/markdown/tech/library/2022/10/05/Pyautogui.html",
             "date": " • Oct 5, 2022"
         }
         
@@ -48,8 +48,8 @@
         ,"post4": {
             "title": "Hacking Chrome Dinosaur Game",
             "content": "Introducing Chrome Dinosaur Game . The Dinosaur Game (also known as the Chrome Dino) is a browser game developed by Google and built into the Google Chrome web browser. The player guides a pixelated Tyrannosaurus rex across a side-scrolling landscape, avoiding obstacles to achieve a higher score. The game was created by members of the Chrome UX team in 2014. . The game we are talking about in this blog refers to the Dino game ripped off from The Chromium Projects. . How to play . Using the spacebar to jump over the cacti and the birds. The game ends when the dinosaur collides with an obstacle or when the dinosaur falls into a pit. . Usage . Open Chrome Console and paste the following code: . Runner.prototype.gameOver() = function() {} . This will disable the game over function and you can play the game forever. . Runner.instance_.config.SPEED . This will return the current speed of the game. You can change the speed by changing the value of the variable. . Runner.instance_.setSpeed(60) // set speed to 10 times faster . In order to end the game, you can cache the gameOver function and call it when you want to end the game. . var cachedGameOver = Runner.prototype.gameOver; Runner.prototype.gameOver = function() { } . When you want to end the game and appear on the leaderbaord . Runner.prototype.gameOver = cachedGameOver; . Have Fun Hacking Games! . References . [1] Wikipedia . [2] The Chromium Projects . [3] Chrome Dino Game . [4] Chrome Dino Game Source Code .",
-            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/09/30/Chromedino.html",
-            "relUrl": "/markdown/tech/2022/09/30/Chromedino.html",
+            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/game/2022/09/30/Chromedino.html",
+            "relUrl": "/markdown/tech/game/2022/09/30/Chromedino.html",
             "date": " • Sep 30, 2022"
         }
         
@@ -70,8 +70,8 @@
         ,"post6": {
             "title": "Figlet",
             "content": "Introduction . pyfiglet is the Python implementation of the FIGlet font rendering system. . Installation . pip3 install pyfiglet . Usage . &gt;&gt;&gt; import pyfiglet &gt;&gt;&gt; figlet_obj = pyfiglet.figlet_format(&quot;Hello World&quot;) &gt;&gt;&gt; print(figlet_obj) _ _ _ _ __ __ _ _ | | | | ___| | | ___ / /__ _ __| | __| | | |_| |/ _ | |/ _ / / / _ | &#39;__| |/ _` | | _ | __/ | | (_) | V V / (_) | | | | (_| | |_| |_| ___|_|_| ___/ _/ _/ ___/|_| |_| __,_| . Reference . geeksforgeeks |",
-            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/2022/08/13/Figlet.html",
-            "relUrl": "/markdown/tech/2022/08/13/Figlet.html",
+            "url": "https://ian729.github.io/silver-umbrella/markdown/tech/library/2022/08/13/Figlet.html",
+            "relUrl": "/markdown/tech/library/2022/08/13/Figlet.html",
             "date": " • Aug 13, 2022"
         }
         
