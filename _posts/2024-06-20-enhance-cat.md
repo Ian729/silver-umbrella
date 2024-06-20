@@ -27,14 +27,12 @@ The idea was to enhance command line cat
 brew install bat
 ```
 
-![alt text](<image.png>)
 
 ## Images
 `imgcat` is a good enhancement to the `cat` command line tool.  
 
 It's like cat but for images. (for iTerm2)
 
-![alt text](image-1.png)
 ### Installation
 ```
 brew install danielgatis/imgcat/imgcat
@@ -63,11 +61,6 @@ cat () {
 	fi
 }
 ```
-
-## Result
-
-![alt text](image-2.png)
-
 
 ## Reference
 1. https://github.com/danielgatis/imgcat
