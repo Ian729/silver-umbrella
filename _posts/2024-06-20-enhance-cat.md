@@ -52,13 +52,32 @@ else
 endif
 ```
 ``` bash
-cat () {
-	if [ -f "$1" ] && file --mime-type "$1" | grep -q "^$1: image"
-	then
-		imgcat "$1"
-	else
-		/opt/homebrew/bin/bat "$@"
-	fi
+cat() {
+    for file in "$@"; do
+        if [ -f "$file" ]; then
+            # Echo the full path of the file
+            full_path=$(realpath "$file")
+            echo $full_path
+            # Check if the file is an image
+            if file --mime-type "$file" | grep -q '^.*: image/'; then
+                if command -v imgcat > /dev/null 2>&1; then
+                    $(which imgcat) "$file"
+                else
+                    echo "Error: imgcat command not found."
+                    return 1
+                fi
+            else
+                # If not an image, use bat if available, otherwise cat
+                if command -v bat > /dev/null 2>&1; then
+                    $(which bat) "$file"
+                else
+                    $(which cat) "$file"
+                fi
+            fi
+        else
+            echo "Error: $file is not a valid file."
+        fi
+    done
 }
 ```
 
