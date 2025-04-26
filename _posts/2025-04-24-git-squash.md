@@ -4,7 +4,7 @@ layout: post
 comments: true
 description: A simple and powerful Git plugin to squash your commits before creating a Pull Request.
 categories: [markdown, tech, tools]
-title: Introducing git-squash: A Simple Git Squashing Tool
+title: Introducing git squash: A Simple Git Squashing Tool
 ---
 # git-squash
 
